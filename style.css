@@ -1,0 +1,118 @@
+
+#mainhead {
+  font-family: "Saira", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:bold;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    color:blue;
+    margin-bottom:60px;
+}
+#logo{
+    border:1px normal blue;
+}
+.cardhead{
+    color:blue;
+}
+#dis{
+    margin-bottom:120px;
+}
+
+#feature {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:500px;
+  font-style: normal;
+  color:blue;
+}
+#upload{
+    background-color:#FEF9F2;
+    border:8px solid blue;
+
+}
+#h2ofup{
+    color:blue;
+    text-align:start;
+}
+#insta{
+    align-items: center;
+}
+#con{
+    color: blue;
+}
+#resources{
+    height: 100%;
+    width:100%;
+    border:2px solid blue;
+}
+.hello{
+    color:#0046FF;
+}
+#fir{
+    color:#0046FF;
+}
+#sec{
+    color:#0046FF;
+}
+#third{
+    color:#0046FF;
+}
+#eggone{
+    height:400px;
+    width:300px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:2px solid blue;
+    text-align:center;
+    padding:25px;
+
+}
+#analyize{
+    border-radius:150px;
+    height:200px;
+    width:200px;
+}
+#eggtwo{
+    height:400px;
+    width:300px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    border:2px solid blue;
+
+}
+#ats{
+    border-radius:100px;
+    width:200px;
+}
+#eggthree{
+    height:400px;
+    width:300px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    border:2px solid blue;
+
+}
+#skill{
+    border-radius:150px;
+    width:200px;
+    height:220px;
+}
+#paratwo{
+   color: blue;
+   text-align: start;
+}
+#role{
+    color:blue;
+    
+}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AR+Guides&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AR+Guides&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResumeFiltered</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <header>
+        <h1 id="mainhead" class="text-center mt-5">RESUME ANALYZER <img id="logo" class="mb-1" src="icon.svg"
+                height="28px" /></h1>
+        <p id="dis" class="text-center">Resume Analyzer is a modern web application designed to help users create
+            stronger and more professional resumes. It provides intelligent features such as resume analysis, ATS score
+            checking, and skill set evaluation through a clean and user-friendly interface.
+
+            The platform helps users improve resume quality, optimize keywords, and identify missing skills to increase
+            their chances of getting selected for jobs</p>
+    </header>
+    <section>
+        <h2 id="feature" class="text-center mb-5">MAIN FEATURES <img src="leafff.svg" height="45px" width="30px"
+                class="mb-2"></h2>
+        <div class="container-lg">
+            <div class="row mb-5">
+                <div class="col-lg-4 col-md-12">
+                    <div id="eggone" class="card h-100">
+                        <img id="analyize" src="analyize.png" class="card-img-top mb-3" alt="analyzizes">
+                        <div class="card-body">
+                            <h5 class="cardhead" class="card-title">Resume Analsysis <img src="an.svg" /></h5>
+                            <p class="card-text">Analyzes the overall structure and quality of the resume
+                                professionally.
+                                Helps users identify strengths and improve weak sections effectively.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div id="eggtwo" class="card h-100">
+                        <img id="ats" src="ats.png" class="card-img-top" alt="ats" height="200px" />
+                        <div class="card-body">
+                            <h4 class="cardhead" class="card-title">ATS Score <img src="target.svg" /></h4>
+                            <p class="card-text">Checks how compatible the resume is with Applicant Tracking Systems.
+                              </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div id="eggthree" class="card h-100">
+                        <img id="skill" src="skill.png" class="card-img-top" alt="skill set">
+                        <div class="card-body">
+                            <h4 class="cardhead" class="card-title">Skill Set <img src="skilllll.svg" class="mb-2" />
+                            </h4>
+                            <p class="card-text">Identifies important technical and professional skills from the resume.
+                                Suggests additional skills to strengthen career opportunities and profile quality.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container mt-5">
+
+        <div id="upload" class="card p-5 shadow text-center mb-5">
+            <div class="mb-3">
+                <input type="text" id="role" class="form-control" placeholder="Enter Target Role" required>
+            </div>
+
+            <h2 id="h2ofup" class="mb-3">
+                Upload Your Resume <img src="emoji.svg" />
+            </h2>
+
+            <p id="paratwo">
+                Upload your resume to analyze and check ATS score and skill set.
+            </p>
+
+            <form id="resume-form">
+
+                <input id="up" class="form-control mb-4" type="file" accept=".pdf,.docx" required>
+
+                <button id="analyze-btn" type="submit" class="btn btn-primary w-100">
+                    Analyze Resume
+                </button>
+
+            </form>
+            <div id="loading" class="mt-4 d-none">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <p class="mt-2 text-muted">Analyzing your resume... This may take a few seconds.</p>
+            </div>
+
+            <div id="results" class="mt-4 text-start d-none">
+                <div class="card bg-dark border-secondary">
+                    <div class="card-body">
+                        <h3 class="text-center mb-4 text-white">Analysis Results</h3>
+                        <div id="ai-response" class="text-white mt-4" style="white-space: pre-wrap; line-height:1.8;">
+                        </div>
+
+                        <div class="mb-4">
+                            <h4 class="text-white">ATS Score</h4>
+                            <div class="progress bg-secondary" style="height: 30px;">
+                                <div id="ats-progress" class="progress-bar fw-bold fs-5" role="progressbar"
+                                    style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <h4 class="text-success"><i class="bi bi-check-circle"></i> Pros</h4>
+                                <ul id="pros-list" class="list-group list-group-flush bg-transparent">
+                                </ul>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <h4 class="text-danger"><i class="bi bi-x-circle"></i> Cons</h4>
+                                <ul id="cons-list" class="list-group list-group-flush bg-transparent">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="ai-response" class="text-white mt-4" style="white-space: pre-wrap;"></div>
+
+    </section>
+    <section>
+        <div id="resources" class="container">
+            <h2 class="hello">Resume Resources</h2>
+            <div class="row">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 id="fir" class="card-title">Resume Documentation</h5>
+                        <p class="card-text">A complete guide to building a professional software resume from scratch.
+                            This resource explains resume structure, ATS optimization, formatting rules, important
+                            sections, project writing, skills presentation, common mistakes, and tips to make your
+                            resume stand out for internships and software jobs.</p>
+                        <a href="Resume Documantaion.pdf" download class="btn btn-primary">Get Documenation</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 id="sec" class="card-title">Resume Template</h5>
+                        <p class="card-text">This standard software resume template is designed to maximize readability
+                            and ATS compatibility for software engineering roles. It provides a structured layout to
+                            effectively showcase programming skills, projects, certifications, and academic achievements
+                            in a professional manner.</p>
+                        <a href="https://resume.io/resume-templates" class="btn btn-primary">Go to templates</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 id="third" class="card-title">Youtube Resources</h5>
+                        <p class="card-text">Best YouTube resources for learning software resume building, ATS
+                            optimization, interview preparation, and professional profile development.</p>
+                        <a href="links.html" class="btn btn-primary">Get Resources</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-5">
+        <div id="foot" class="conatiner">
+            <div class="row">
+                <div id="first" class="col-12 justify-content-center">
+                    <h5 id="con" class="text-center">CONTACT US<svg class="mb-2" height="15px" width="20px"
+                            viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" {...props}>
+                            <path
+                                d="M49.6 56c0-3.2-.4-4-3.9-4.3c-.6 0-1-.5-1-1.1V49c0-.4.2-.8.6-1c4.3-2.9 7.1-7.8 7.1-13.3l.1-.7c.1-.5.5-.9 1-1c1.4-.3 2.6-1.4 2.9-2.8c.4-2.1-1-3.9-2.9-4.3c-.3-.1-.5-.4-.5-.7l.4-6.4c.2-24.5-35.3-24.8-35.5-.4l.6 7c0 .3-.1.5-.4.6c-1.6.6-2.7 2.4-2.2 4.3c.3 1.3 1.6 2.2 3 2.6c.6.1 1 .6 1 1.2v.6c0 5.6 2.9 10.6 7.3 13.5c.2.1.3.3.3.5v2c0 .5-.4 1-1 1c-3.6.2-4 1.1-4.1 4.2c-.1.1-.2.3-.3.4c-6 2.5-10.4 6.1-10.2 14.8c0 .5.4.9 1 .9h46.2c.5 0 1-.4 1-.9c.1-8.7-4.1-12-10.1-14.6c-.1-.2-.2-.3-.4-.5z"
+                                fill="#2F2FE4" />
+                        </svg></h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="d-flex flex-row mb-3 gap-1 justify-content-center">
+        <div class="insta"><a href="https://www.instagram.com/rakesh.reddy_i/"><img src="insta.svg" target="_blank" </a>
+        </div>
+        <div class="linkedin"><a href="https://www.linkedin.com/in/induri-rakesh-reddy-4a8237373/"><img
+                    src="linkedin.svg" target="_blank" </a></div>
+        <div class="github"><a href="https://github.com/rakesh-8672"><img src="github (1).svg" target="_blank" </a>
+        </div>
+    </div>
+    <script>
+        document.getElementById("resume-form").addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            let file = document.getElementById("up").files[0];
+            let role = document.getElementById("role").value;
+
+            let formData = new FormData();
+            formData.append("resume", file);
+            formData.append("role", role);
+
+            let res = await fetch("http://127.0.0.1:5000/analyze", {
+                method: "POST",
+                body: formData
+            });
+
+            let data = await res.json();
+
+            document.getElementById("results").classList.remove("d-none");
+
+            // SUMMARY
+            document.getElementById("ai-response").innerText = data.summary || "";
+
+            // ATS SCORE
+            let score = data.ats_score || 0;
+            document.getElementById("ats-progress").style.width = score + "%";
+            document.getElementById("ats-progress").innerText = score + "%";
+
+            // PROS
+            document.getElementById("pros-list").innerHTML =
+                (data.strengths || []).map(i => `<li style="white-space:pre-wrap">${i}</li>`).join("");
+
+            // CONS
+            document.getElementById("cons-list").innerHTML =
+                (data.weaknesses || []).map(i => `<li style="white-space:pre-wrap">${i}</li>`).join("");
+        });
+    </script>
+</body>
+
+</html>
