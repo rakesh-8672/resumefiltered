@@ -3,3 +3,4 @@ flask-cors
 pdfplumber
 python-docx
 groq
+gunicorn

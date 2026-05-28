@@ -1,12 +1,15 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 import pdfplumber
 import docx
 from groq import Groq
 import json
 import re
-
-app = Flask(__name__)
+app = Flask(
+    __name__,
+    template_folder='../templates',
+    static_folder='static'
+)
 CORS(app)
 
 import os
@@ -14,8 +17,7 @@ client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 @app.route('/')
 def home():
-    return "Resume Analyzer Running"
-
+    return render_template("index.html")
 
 @app.route('/analyze', methods=['POST'])
 def analyze():
