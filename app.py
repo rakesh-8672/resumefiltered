@@ -7,7 +7,9 @@ import json
 import re
 
 # 🔑 PUT YOUR GROQ API KEY HERE
-client = Groq(api_key="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")
+import os
+
+client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 app = Flask(__name__)
 CORS(app)
