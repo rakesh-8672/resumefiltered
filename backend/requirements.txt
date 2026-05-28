@@ -3,8 +3,3 @@ flask-cors
 pdfplumber
 python-docx
 groq
-html
-css
-javascript
-bootstarp
-github
