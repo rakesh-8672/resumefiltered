@@ -123,3 +123,9 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+#features{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+}
