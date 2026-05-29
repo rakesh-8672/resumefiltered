@@ -33,9 +33,7 @@
 
         <h1 id="mainhead" class="text-center mt-5">
             RESUME ANALYZER
-            <img id="logo" class="mb-1"
-                src="{{ url_for('static', filename='icon.svg') }}"
-                height="28px">
+            <img id="logo" class="mb-1" src="{{ url_for('static', filename='icon.svg') }}" height="28px">
         </h1>
 
         <p id="dis" class="text-center">
@@ -55,11 +53,7 @@
 
         <h2 id="feature" class="text-center mb-5">
             MAIN FEATURES
-            <img
-                src="{{ url_for('static', filename='leafff.svg') }}"
-                height="45px"
-                width="30px"
-                class="mb-2">
+            <img src="{{ url_for('static', filename='leafff.svg') }}" height="45px" width="30px" class="mb-2">
         </h2>
 
         <div class="container-lg">
@@ -71,10 +65,8 @@
 
                     <div id="eggone" class="card h-100">
 
-                        <img id="analyize"
-                            src="{{ url_for('static', filename='analyize.png') }}"
-                            class="card-img-top mb-3"
-                            alt="analyzes">
+                        <img id="analyize" src="{{ url_for('static', filename='analyize.png') }}"
+                            class="card-img-top mb-3" alt="analyzes">
 
                         <div class="card-body">
 
@@ -97,10 +89,7 @@
 
                     <div id="eggtwo" class="card h-100">
 
-                        <img id="ats"
-                            src="{{ url_for('static', filename='ats.png') }}"
-                            class="card-img-top"
-                            alt="ats"
+                        <img id="ats" src="{{ url_for('static', filename='ats.png') }}" class="card-img-top" alt="ats"
                             height="200px">
 
                         <div class="card-body">
@@ -123,18 +112,14 @@
 
                     <div id="eggthree" class="card h-100">
 
-                        <img id="skill"
-                            src="{{ url_for('static', filename='skill.png') }}"
-                            class="card-img-top"
+                        <img id="skill" src="{{ url_for('static', filename='skill.png') }}" class="card-img-top"
                             alt="skill set">
 
                         <div class="card-body">
 
                             <h4 class="cardhead">
                                 Skill Set
-                                <img
-                                    src="{{ url_for('static', filename='skilllll.svg') }}"
-                                    class="mb-2">
+                                <img src="{{ url_for('static', filename='skilllll.svg') }}" class="mb-2">
                             </h4>
 
                             <p class="card-text">
@@ -157,8 +142,7 @@
         <div id="upload" class="card p-5 shadow text-center mb-5">
 
             <div class="mb-3">
-                <input type="text" id="role" class="form-control"
-                    placeholder="Enter Target Role" required>
+                <input type="text" id="role" class="form-control" placeholder="Enter Target Role" required>
             </div>
 
             <h2 id="h2ofup" class="mb-3">
@@ -172,15 +156,9 @@
 
             <form id="resume-form">
 
-                <input id="up"
-                    class="form-control mb-4"
-                    type="file"
-                    accept=".pdf,.docx"
-                    required>
+                <input id="up" class="form-control mb-4" type="file" accept=".pdf,.docx" required>
 
-                <button id="analyze-btn"
-                    type="submit"
-                    class="btn btn-primary w-100">
+                <button id="analyze-btn" type="submit" class="btn btn-primary w-100">
 
                     Analyze Resume
 
@@ -212,9 +190,7 @@
                             Analysis Results
                         </h3>
 
-                        <div id="ai-response"
-                            class="text-white mt-4"
-                            style="white-space: pre-wrap; line-height:1.8;">
+                        <div id="ai-response" class="text-white mt-4" style="white-space: pre-wrap; line-height:1.8;">
                         </div>
 
                         <!-- ATS -->
@@ -224,13 +200,8 @@
 
                             <div class="progress bg-secondary" style="height: 30px;">
 
-                                <div id="ats-progress"
-                                    class="progress-bar fw-bold fs-5"
-                                    role="progressbar"
-                                    style="width: 0%;"
-                                    aria-valuenow="0"
-                                    aria-valuemin="0"
-                                    aria-valuemax="100">
+                                <div id="ats-progress" class="progress-bar fw-bold fs-5" role="progressbar"
+                                    style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
 
                                     0%
 
@@ -248,8 +219,7 @@
                                     <i class="bi bi-check-circle"></i> Pros
                                 </h4>
 
-                                <ul id="pros-list"
-                                    class="list-group list-group-flush bg-transparent">
+                                <ul id="pros-list" class="list-group list-group-flush bg-transparent">
                                 </ul>
 
                             </div>
@@ -260,8 +230,7 @@
                                     <i class="bi bi-x-circle"></i> Cons
                                 </h4>
 
-                                <ul id="cons-list"
-                                    class="list-group list-group-flush bg-transparent">
+                                <ul id="cons-list" class="list-group list-group-flush bg-transparent">
                                 </ul>
 
                             </div>
@@ -274,102 +243,150 @@
 
         </div>
 
-    </section>
+        <section class="resources-section">
+            <h2 class="headre">Resume Resources</h2>
 
-    <!-- FOOTER -->
-    <footer class="mt-5">
+            <div class="resources-container">
 
-        <h5 id="con" class="text-center">
-            Crafted by INDURI RAKESH REDDY
-        </h5>
+                <!-- Left Image -->
+                <div class="resource-image">
+                    <img src="{{ url_for('static', filename='resource2.png') }}" alt="Resources Image">
+                </div>
 
-        <div class="d-flex flex-row mb-3 gap-3 justify-content-center">
+                <!-- Right Resource Box -->
+                <div class="resource-box">
 
-            <div class="insta">
-                <a href="https://www.instagram.com/rakesh.reddy_i/" target="_blank">
-                    <img
-                        src="{{ url_for('static', filename='insta.svg') }}"
-                        height="30">
-                </a>
+                    <!-- Resource 1 -->
+                    <div class="resource-card">
+                        <h3>Resume Documentation</h3>
+                        <p>
+                            Complete guide and documentation for understanding the Resume Filtered platform and its
+                            features.
+                        </p>
+
+                        <a href="{{ url_for('static', filename='resume Documantation.pdf') }}" download
+                            class="btn btn-primary">
+                            Download PDF
+                        </a>
+                    </div>
+
+                    <!-- Resource 2 -->
+                    <div class="resource-card">
+                        <h3>Resume Templates</h3>
+                        <p>
+                            Collection of professional and ATS-friendly resume templates for students and professionals.
+                        </p>
+
+                        <a href="https://resume.io/resume-templates" target="_blank" class="btn btn-primary">
+                            Resume Templates
+                        </a>
+                    </div>
+
+                    <!-- Resource 3 -->
+                    <div class="resource-card">
+                        <h3>YouTube Resources</h3>
+                        <p>
+                            Access useful YouTube tutorials and career guidance videos for resume building and
+                            interviews.
+                        </p>
+
+                        <a href="{{ url_for('static', filename='links.html') }}" target="_blank"
+                            class="btn btn-primary">
+                            Open Resources
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="mt-5">
+
+            <h5 id="con" class="text-center">
+                Crafted by INDURI RAKESH REDDY
+            </h5>
+
+            <div class="d-flex flex-row mb-3 gap-3 justify-content-center">
+
+                <div class="insta">
+                    <a href="https://www.instagram.com/rakesh.reddy_i/" target="_blank">
+                        <img src="{{ url_for('static', filename='insta.svg') }}" height="30">
+                    </a>
+                </div>
+
+                <div class="linkedin">
+                    <a href="https://www.linkedin.com/in/induri-rakesh-reddy-4a8237373/" target="_blank">
+
+                        <img src="{{ url_for('static', filename='linkedin.svg') }}" height="30">
+
+                    </a>
+                </div>
+
+                <div class="github">
+                    <a href="https://github.com/rakesh-8672" target="_blank">
+
+                        <img src="{{ url_for('static', filename='github (1).svg') }}" height="30">
+
+                    </a>
+                </div>
+
             </div>
 
-            <div class="linkedin">
-                <a href="https://www.linkedin.com/in/induri-rakesh-reddy-4a8237373/"
-                    target="_blank">
+        </footer>
 
-                    <img
-                        src="{{ url_for('static', filename='linkedin.svg') }}"
-                        height="30">
+        <!-- SCRIPT -->
+        <script>
 
-                </a>
-            </div>
+            document.getElementById("resume-form").addEventListener("submit", async function (e) {
 
-            <div class="github">
-                <a href="https://github.com/rakesh-8672" target="_blank">
+                e.preventDefault();
 
-                    <img
-                        src="{{ url_for('static', filename='github (1).svg') }}"
-                        height="30">
+                let file = document.getElementById("up").files[0];
+                let role = document.getElementById("role").value;
 
-                </a>
-            </div>
+                let formData = new FormData();
 
-        </div>
+                formData.append("resume", file);
+                formData.append("role", role);
 
-    </footer>
+                let res = await fetch("/analyze", {
+                    method: "POST",
+                    body: formData
+                });
 
-    <!-- SCRIPT -->
-    <script>
+                let data = await res.json();
 
-        document.getElementById("resume-form").addEventListener("submit", async function (e) {
+                document.getElementById("results").classList.remove("d-none");
 
-            e.preventDefault();
+                // SUMMARY
+                document.getElementById("ai-response").innerText =
+                    data.summary || "";
 
-            let file = document.getElementById("up").files[0];
-            let role = document.getElementById("role").value;
+                // ATS SCORE
+                let score = data.ats_score || 0;
 
-            let formData = new FormData();
+                document.getElementById("ats-progress").style.width =
+                    score + "%";
 
-            formData.append("resume", file);
-            formData.append("role", role);
+                document.getElementById("ats-progress").innerText =
+                    score + "%";
 
-            let res = await fetch("/analyze", {
-                method: "POST",
-                body: formData
+                // PROS
+                document.getElementById("pros-list").innerHTML =
+                    (data.strengths || [])
+                        .map(i => `<li style="white-space:pre-wrap">${i}</li>`)
+                        .join("");
+
+                // CONS
+                document.getElementById("cons-list").innerHTML =
+                    (data.weaknesses || [])
+                        .map(i => `<li style="white-space:pre-wrap">${i}</li>`)
+                        .join("");
+
             });
 
-            let data = await res.json();
-
-            document.getElementById("results").classList.remove("d-none");
-
-            // SUMMARY
-            document.getElementById("ai-response").innerText =
-                data.summary || "";
-
-            // ATS SCORE
-            let score = data.ats_score || 0;
-
-            document.getElementById("ats-progress").style.width =
-                score + "%";
-
-            document.getElementById("ats-progress").innerText =
-                score + "%";
-
-            // PROS
-            document.getElementById("pros-list").innerHTML =
-                (data.strengths || [])
-                    .map(i => `<li style="white-space:pre-wrap">${i}</li>`)
-                    .join("");
-
-            // CONS
-            document.getElementById("cons-list").innerHTML =
-                (data.weaknesses || [])
-                    .map(i => `<li style="white-space:pre-wrap">${i}</li>`)
-                    .join("");
-
-        });
-
-    </script>
+        </script>
 
 </body>
 
