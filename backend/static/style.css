@@ -132,6 +132,9 @@ body{
 .ress{
     color:#0046FF;
 }
+.paras{
+    color:chartreuse;
+}
 .resources-section{
     padding: 60px 8%;
 }
@@ -156,12 +159,22 @@ body{
     flex: 1;
     min-width: 300px;
     max-width: 420px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f5f5f5;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 .resource-image img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    max-height: 500px;
+
+    object-fit: contain;
     border-radius: 20px;
 }
 
@@ -181,7 +194,7 @@ body{
     box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
 }
 
-/* Individual Cards */
+/* Individual Resource Cards */
 .resource-card{
     padding-bottom: 20px;
     border-bottom: 1px solid #ddd;
@@ -220,6 +233,10 @@ body{
 
     .resource-image{
         max-width: 100%;
+    }
+
+    .resource-image img{
+        max-height: 350px;
     }
 
     .resource-box{
